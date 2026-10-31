@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shalini — MBA candidate specializing in Marketing and Human Resource Management. Marketing, sales, research, social media and business development portfolio.">
+<title>Shalini | Marketing & People Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#18212f;--muted:#647084;--paper:#f7f8fb;--white:#fff;--accent:#5c4ce5;--accent2:#d9d5ff;--line:#e7e9f0;--mint:#dff5ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:20px}.brand{font:800 1.1rem Manrope,sans-serif;letter-spacing:-.04em}.brand span{color:var(--accent)}.navlinks{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.navlinks a:hover{color:var(--accent)}
+.hero{padding:76px 0 64px;display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}
+.eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem}
+h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.15;letter-spacing:-.04em}h1{font-size:clamp(3rem,7vw,5.8rem);margin:16px 0}h1 span{color:var(--accent)}.hero p{max-width:650px;color:var(--muted);font-size:1.08rem}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem;border:1px solid var(--line);background:white}.btn.primary{background:var(--accent);color:white;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}
+.profile-card{background:linear-gradient(145deg,#eceaff,#fff 70%);border:1px solid #e5e1ff;border-radius:28px;padding:28px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 60px #302a7510}
+.profile-mark{width:86px;height:86px;border-radius:24px;background:var(--accent);color:white;display:grid;place-items:center;font:800 2.5rem Manrope,sans-serif}.profile-card h3{font-size:1.45rem;margin:24px 0 8px}.profile-card p{font-size:.92rem;margin:0;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.pill{font-size:.78rem;padding:7px 11px;border-radius:999px;background:white;border:1px solid var(--line);color:#4b5365}
+section{padding:54px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:26px}.section-head h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:8px 0}.section-head p{color:var(--muted);max-width:500px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:24px}.card h3{font-size:1.15rem;margin:0 0 6px}.meta{font-size:.86rem;color:var(--accent);font-weight:700;margin-bottom:12px}.card p,.card li{color:var(--muted);font-size:.94rem}.card ul{padding-left:18px;margin:12px 0 0}.card li+li{margin-top:7px}
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skillbox{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.skillbox h3{font-size:1rem;margin:0 0 12px}.skillbox p{margin:0;color:var(--muted);font-size:.9rem}
+.timeline{display:grid;gap:14px}.timeline .card{position:relative}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.feature{background:var(--ink);color:white;border-radius:24px;padding:30px;display:flex;justify-content:space-between;gap:24px;align-items:center}.feature p{color:#c6ccda;margin-bottom:0}.feature h2{margin:8px 0;font-size:2rem}.feature .pill{background:#293448;color:#e7eaff;border-color:#3b465a}
+.cert-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px}.cert-icon{width:38px;height:38px;flex:0 0 38px;border-radius:12px;background:var(--mint);display:grid;place-items:center;font-weight:800;color:#23634e}.cert strong{display:block;font-size:.95rem}.cert small{color:var(--muted)}
+footer{padding:36px 0 50px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.footer-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:50px 0}.profile-card{min-height:240px}.grid,.two-col,.cert-list{grid-template-columns:1fr}.skills{grid-template-columns:1fr 1fr}.navlinks{gap:12px;font-size:.8rem}.section-head{display:block}.section-head p{margin-top:10px}}
+@media(max-width:520px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.skills{grid-template-columns:1fr}section{padding:38px 0}.hero{gap:28px}}
+@media print{body{background:#fff}.navlinks,.actions{display:none}.hero{padding:25px 0}.card,.profile-card,.skillbox,.cert{break-inside:avoid;box-shadow:none}section{padding:20px 0}.wrap{width:100%}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="brand" href="#top">SHALINI<span>.</span></a>
+  <div class="navlinks"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#education">Education</a><a href="#certifications">Credentials</a><a href="#contact">Contact</a></div>
+</nav>
+<main id="top">
+<header class="hero">
+  <div>
+    <div class="eyebrow">Marketing · Sales · People & Culture</div>
+    <h1>Ideas into<br><span>impact.</span></h1>
+    <p>MBA candidate specializing in Marketing and Human Resource Management, with experience across market research, client communication, sales, CRM and social media. I enjoy understanding people, building connections and turning insights into meaningful business action.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:shalu.mishrathe775@gmail.com">Let's connect ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/shalini-mishra-4b1aa3242/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <button class="btn" onclick="window.print()">Save / Print</button>
+    </div>
+  </div>
+  <aside class="profile-card">
+    <div class="profile-mark">S</div>
+    <div><h3>Curious by nature.<br>People-focused by choice.</h3><p>Marketing-minded professional with a research-first approach, a collaborative spirit and a drive to keep learning.</p>
+    <div class="pills"><span class="pill">Marketing & HR</span><span class="pill">Client Engagement</span><span class="pill">Research</span><span class="pill">Communication</span></div></div>
+  </aside>
+</header>
+
+<section id="experience">
+  <div class="section-head"><div><div class="eyebrow">What I've done</div><h2>Experience</h2></div><p>Hands-on exposure to sales, research, customer relationships and brand communication.</p></div>
+  <div class="timeline">
+    <article class="card"><h3>Sales Executive</h3><div class="meta">MP Research Work · Aug 2024 – Apr 2025</div><ul><li>Executed online and offline sales initiatives, expanded the client base and contributed to revenue generation.</li><li>Consulted clients, presented suitable service options and responded to customer queries.</li><li>Supported conversions through follow-up, clear communication and relationship nurturing.</li></ul></article>
+    <article class="card"><h3>Social Media Manager</h3><div class="meta">Kidzee · Oct 2023 – Jul 2024</div><ul><li>Managed Instagram and Facebook presence to strengthen brand visibility, reach and engagement.</li><li>Created and coordinated social content to encourage audience participation and event engagement.</li><li>Prepared captions, posters and promotional content; supported communication with parents.</li></ul></article>
+    <article class="card"><h3>Market Research Executive</h3><div class="meta">Silicon India · Nov 2022 – Mar 2023</div><ul><li>Researched industry trends, customer needs, competitor insights and business opportunities.</li><li>Analyzed target companies, profiles, industries and relevant business decision-makers.</li><li>Engaged with international clients and maintained CRM records to support reporting and outreach.</li></ul></article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head"><div><div class="eyebrow">My toolkit</div><h2>Skills & strengths</h2></div><p>A blend of customer-facing experience, analytical thinking and creative communication.</p></div>
+  <div class="skills">
+    <div class="skillbox"><h3>Marketing & Branding</h3><p>Digital Marketing · Social Media Marketing · Content Strategy · Brand Awareness · Promotional Content</p></div>
+    <div class="skillbox"><h3>Sales & Relationships</h3><p>Sales · Business Development · Consultative Selling · CRM · Client Relationship Management · Customer Engagement</p></div>
+    <div class="skillbox"><h3>Research & Insights</h3><p>Market Research · Competitor Insights · Customer Insights · Company Research · Requirement Analysis</p></div>
+    <div class="skillbox"><h3>People & Collaboration</h3><p>Communication · Teamwork · Coordination · Leadership · Client Handling</p></div>
+    <div class="skillbox"><h3>Professional strengths</h3><p>Presentation Skills · Problem-Solving · Creativity · Adaptability · Learning Mindset</p></div>
+    <div class="skillbox"><h3>Areas of interest</h3><p>Marketing · Sales · Digital Marketing · Human Resource Management · Employee & Customer Engagement</p></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-head"><div><div class="eyebrow">Academic background</div><h2>Education</h2></div></div>
+  <div class="grid">
+    <article class="card"><h3>MBA</h3><div class="meta">2025–2027 · Pursuing</div><p><strong>Marketing & Human Resource Management</strong><br>GL Bajaj Group of Institutions<br>Dr. A.P.J. Abdul Kalam Technical University</p><p>SGPA: 7.7</p></article>
+    <article class="card"><h3>Bachelor of Arts</h3><div class="meta">2024 · 70%</div><p>Dr. Bhimrao Ambedkar University</p></article>
+    <article class="card"><h3>Senior School Certificate · Class XII</h3><div class="meta">2021 · 84%</div><p>Central Board of Secondary Education</p></article>
+    <article class="card"><h3>Secondary School Examination · Class X</h3><div class="meta">2019 · 75%</div><p>Central Board of Secondary Education</p></article>
+  </div>
+</section>
+
+<section>
+  <div class="feature"><div><div class="eyebrow" style="color:#b9b2ff">Initiative & leadership</div><h2>Founder — VYBE</h2><p>Vision, Youth, Branding & Engagement: a management-club concept focused on marketing, branding, business strategy, leadership, business games and practical student engagement.</p></div><span class="pill">Building ideas</span></div>
+</section>
+
+<section>
+  <div class="section-head"><div><div class="eyebrow">Projects</div><h2>In progress</h2></div></div>
+  <article class="card"><h3>An Integrated Mobile App — Braj Darshan</h3><div class="meta">Ongoing</div><p>Conducting user research and requirement analysis to help shape features that enhance user experience and engagement.</p></article>
+</section>
+
+<section id="certifications">
+  <div class="section-head"><div><div class="eyebrow">Learning & recognition</div><h2>Certifications & achievements</h2></div><p>Selected credentials and recognitions from the certificates provided.</p></div>
+  <div class="cert-list">
+    <div class="cert"><div class="cert-icon">✓</div><div><strong>30-Day Marketing Internship</strong><small>Turnip Innovations · 2026</small></div></div>
+    <div class="cert"><div class="cert-icon">✓</div><div><strong>Business Research Workshop</strong><small>DUCAT · GL Bajaj · Apr 2026</small></div></div>
+    <div class="cert"><div class="cert-icon">★</div><div><strong>Entrepreneur of the Day</strong><small>Mamla Business Hai · Team STARNEX · Aug 2026</small></div></div>
+    <div class="cert"><div class="cert-icon">★</div><div><strong>TOONAV 2026 — Fashion Show</strong><small>First position · GL Bajaj Annual Fest</small></div></div>
+    <div class="cert"><div class="cert-icon">★</div><div><strong>Event Coordinator & Student Volunteer</strong><small>GL Bajaj Annual Fest TOONAV 2026</small></div></div>
+    <div class="cert"><div class="cert-icon">✓</div><div><strong>Management Games Certificates</strong><small>Participation / recognition</small></div></div>
+    <div class="cert"><div class="cert-icon">★</div><div><strong>International Martial Arts Player</strong><small>International, National & SGFI-level competitions; wins and competitive recognition</small></div></div>
+    <div class="cert"><div class="cert-icon">✓</div><div><strong>Viksit Bharat Young Leaders Dialogue (VBYLD) 2027</strong><small>Online quiz participation · MYBharat · Sep 2026</small></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head"><div><div class="eyebrow">Let's talk</div><h2>Open to opportunities.</h2></div><p>Interested in roles across marketing, sales, digital marketing and people-focused business functions.</p></div>
+  <div class="card"><p><strong>Email</strong> · <a href="mailto:shalu.mishrathe775@gmail.com">shalu.mishrathe775@gmail.com</a><br><strong>Phone</strong> · <a href="tel:+919528938205">+91 95289 38205</a><br><strong>LinkedIn</strong> · <a href="https://www.linkedin.com/in/shalini-mishra-4b1aa3242/" target="_blank" rel="noopener">linkedin.com/in/shalini-mishra-4b1aa3242</a><br><strong>Languages</strong> · Hindi, English</p></div>
+</section>
+</main>
+<footer><div class="footer-row"><span>© <span id="year"></span> Shalini · Personal portfolio</span><span>Designed to grow with my career.</span></div></footer>
+</div>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
